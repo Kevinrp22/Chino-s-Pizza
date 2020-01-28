@@ -1,0 +1,47 @@
+#contenedor-logo{
+    height: 80px;
+    text-align: center;
+}
+
+#logo{
+    font-size:40px;
+}
+
+.menu{
+    border-radius: 10px;
+    background-color: rgba(213, 31, 13, 0.88);
+
+}
+    .menu a{
+        color:white;
+    }
+    .menu a:hover{
+        color:rgb(161, 161, 161);
+    }
+.header{
+    background-image: url(../../assets/fondomenu.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color:white
+}
+.contenedor-texto-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-principal{
+    width: 300px;
+    color:white;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 700;
+    font-size: 50px;
+    background-color: rgba(248, 227, 0, 0.674);
+}
