@@ -8,7 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+        <script src="main.js"></script>
     <!-- BootStrap -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -23,19 +30,35 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/9d699014b9.js" crossorigin="anonymous"></script>
     <!-- FONT GOOGLE -->
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Frijole|Lato&display=swap" rel="stylesheet">
 </head>
+<link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
 
 <body>
-
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Carta</a></li>
+            <li><a href="#">Personaliza tu pizza</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+    </div>
     <div id="contenedor-logo">
         <div id="logo">
             LOGO
         </div>
+        <div class="barra">
+            <button id="boton-menu"  type="button" style="display: none;">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
     </div>
 
+
     <!-- MENU -->
+
+
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg menu">
@@ -69,16 +92,301 @@
                     </ul>
                 </div>
             </nav>
-            <div class="contenedor-texto-principal py-5">
-                <p class="texto-principal text-center"></p>
-                <p class="texto-principal text-center">Bienvenido a la pizzeria </p>
+            <div class="contenedor-texto-principal text-center py-5">
+                <p class="texto-principal  ">Legendary</p>
+                <p class="texto-principal  ">Chino's Pizza </p>
+                <p class="texto-segundario ">La pizzeria chino's de confianza, no encontrarás otra mejor</p>
+                <button class="botonPrincipal">
+                    <a href="#">Empezar con mi pedido</a>
+                </button>
             </div>
+
         </div>
     </div>
 
+    <!-- FIN HEADER-->
 
-    <div class="seccion1">
 
+    <div class="container">
+        <div class="contenedor-contenido">
+
+            <div class="encabezado-principal text-center">
+                <h2 style="font-size: 30px;">Clásicos de todos los tiempos</h2>
+                <h2 style="color:black">Pizzas más vendidas</h2>
+                <p>Nuestras pizzas gourmet con un estilo más chino, una verdadera creatividad</p>
+            </div>
+
+            <div class="contenedor-pizzas">
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza text-center">
+                    <div class="imagen-pizza">
+                        <img src="../../assets/pizza1.png" alt="">
+                    </div>
+                    <div class="texto-pizza">
+                        <h4>ReBaconChess Pizza</h4>
+                        <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                            tomate, barbacoa de la casa y rancho.</p>
+                    </div>
+                    <div class="orden-pizza">
+                        <div class="orden">
+                            <p>Pequeña</p>
+                            <p>8.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Mediana</p>
+                            <p>12.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                        <div class="orden">
+                            <p>Familiar</p>
+                            <p>16.99€</p>
+                            <a href="#" class="boton-añadir">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- FIN CONTENDOR-PIZZAS -->
+        </div>
+        <!-- FIN CONTENEDOR -->
+    </div>
+    <div class="footer">
+        <div class="redes-sociales">
+            <ul class="py-1">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="texto-footer py-2">
+            Diseño Web by Chino's Company.SL. Todos los derechos reservados
+        </div>
     </div>
 </body>
 
