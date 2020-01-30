@@ -1,20 +1,22 @@
 /* COPIAR DESDE AQUI */
 
 /* GENERAL CONTENEDOR */
-*{
+
+* {
     margin: 0;
     padding: 0;
     transition: all 0.8s!important;
 }
 
-button:focus{
-    outline:none!important;
+button:focus {
+    outline: none!important;
 }
-ul, li{
-    text-decoration: none!important;
 
+ul, li {
+    text-decoration: none!important;
     list-style: none!important;
 }
+
 a {
     text-decoration: none!important;
     color: white!important;
@@ -26,8 +28,8 @@ a:hover {
     color: white!important;
     transition: all 300ms!important;
 }
-/* FIN GENERAL CONTENEDOR */
 
+/* FIN GENERAL CONTENEDOR */
 
 #contenedor-arriba {
     height: 80px;
@@ -35,79 +37,90 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    height: auto;
+    padding: 15px 0px;
 }
-.contenedor-logo{
+
+.contenedor-logo {
     width: 60%;
     display: flex;
     justify-content: flex-end;
-
 }
-
 
 #logo {
     font-size: 40px;
     margin-right: 1.5rem;
-   
+    --webkit-transition: all 100ms ease-in-out!important;
 }
-.barra{
+#logo:hover{    
+    transform: translateX(10px) rotate(2deg) ;
+
+    /* transform: scale(1.1,1.1); */
+}
+
+.barra {
     display: flex;
     justify-content: flex-end;
     top: 1rem;
-   
     width: 40%;
 }
-#boton-menu{
+
+#boton-menu {
     margin-right: 5rem;
     transition: all 300ms ease;
     border-style: none;
-    background-color: rgb(233, 233, 0);
+    background-color: #f7c338;
     border-radius: 100%;
     padding: 9px 13px;
     -webkit-transition: all 200ms ease-in-out;
 }
 
-#boton-menu:hover{
+#boton-menu:hover {
     background-color: black;
 }
-.fa-bars{
-    color:white!important;
+
+.fa-bars {
+    color: white!important;
     font-size: 20px!important;
 }
 
 /* SIDEBAR */
 
-#sidebar{
+#sidebar {
     position: fixed;
     background-color: black;
     width: 300px;
     height: 100%;
     left: -300px;
     transition: all 300ms ease;
-    
 }
-#sidebar ul li{
+
+#sidebar ul li {
     text-align: center;
     border-bottom: 1px solid gray;
     padding: 20px;
 }
-#sidebar.active{
+
+#sidebar.active {
     left: 0;
     transition: all 300ms ease;
 }
+
 /* FIN SIDEBAR */
+
 .menu {
     border-radius: 10px;
     background-color: #ba0000;
     transition: all 300ms ease!important;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.menu li{
+.menu li {
     padding: 17px;
     --webkit-transition: all 10ms ease-in-out!important;
 }
@@ -123,14 +136,16 @@ a:hover {
 .menu li:hover {
     color: white!important;
     background-color: rgb(39, 39, 39)!important;
-    cursor:pointer;
-    
+    padding: 17px 45px;
+    cursor: pointer;
 }
-i{
+
+i {
     color: white;
 }
-i:hover{
-    color:white!important;
+
+i:hover {
+    color: white!important;
 }
 
 .header {
@@ -145,7 +160,6 @@ i:hover{
 
 .fa-bars {
     font-size: 30px;
-    
 }
 
 .contenedor-texto-principal {
@@ -183,7 +197,6 @@ font-family: 'Finger Paint', cursive; */
     border-style: none;
     background-color: #ba0000;
     height: 50px;
-    
 }
 
 .botonPrincipal:hover {
@@ -200,50 +213,106 @@ font-family: 'Finger Paint', cursive; */
     color: white;
     text-decoration: none;
 }
+
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: #a5102e;
     padding: 20px;
     height: 100px;
     margin-top: 3rem;
 }
-.redes-sociales{
+
+.redes-sociales {
     float: left;
 }
-.redes-sociales ul li{
+
+.redes-sociales ul li {
     display: inline-block;
     padding: 5px;
-
 }
-.redes-sociales a, i{
+
+.redes-sociales a, i {
     font-size: 15x;
     --webkit-transition: all 200ms ease-in-out;
 }
-.redes-sociales a:hover, i:hover{    
+
+.redes-sociales a:hover, i:hover {
     background-color: transparent!important;
-    color:black;
+    color: black;
     font-weight: 700;
-    
 }
 
-.texto-footer{
+.texto-footer {
     float: right;
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
 }
+
 /* COPIAR HASTA AQUI */
 
 
-@media (max-width: 780px) {
-    .menu{
-        display: none!important;
-    }
-    #boton-menu{
-        display: block!important;
-       
-    }
+/* ------------------------------------------------------------------- */
+
+.ApartadoPizza{
+ 
+    font-family: 'Lato', sans-serif;
+    padding: 70px 0px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pizza{
+    text-align: center;
+    width: auto;
+   
+}
+
+.pizza img{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+/* .pizza:hover{
+    cursor: pointer;
+    transform: matrix3d(1.3,1.2);
+} */
+
+.orden{
+    
+  
+    width: 60%;
+    padding: 0px 60px;
+}
+
+.encabezado-texto-pizza h1{
+    font-weight: 700;
+}
+
+/* INGREDIENTES */
+#formu-adicional {
+    width: auto;
+}
+
+.tituloAdicional {
+    width: 100%;
+    color: gray;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+#lista-ingredientes {
+    column-count: 2;
+}
+.estilo-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.estilo-input input{
 }
 
 
@@ -251,6 +320,39 @@ font-family: 'Finger Paint', cursive; */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+    .menu {
+        display: none!important;
+    }
+    #boton-menu {
+        display: block!important;
+    }
+}
 
 @media (max-width: 1200px) {
     .pizza {
@@ -277,14 +379,51 @@ font-family: 'Finger Paint', cursive; */
     .texto-pizza h4 {
         font-size: 17px;
     }
-    .texto.pizza p {
-        font-size:
-    }
+    
     .orden-pizza .orden p {
         font-size: 14px;
     }
-
-    .texto-principal{
+    .texto-principal {
         font-size: 50px;
     }
 }
+
+
+
+
+@media (max-width: 1200px){
+    .pizza img{
+        height: 300px;
+    }
+}
+@media (max-width: 992px){
+    .pizza {
+        width: 200px;
+        height: 250px;
+    }
+    .pizza img{
+        height: 210px;
+    }
+    .orden{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .orden{
+        width: 100%;
+        padding: 0px 50px;
+    }
+    .encabezado-texto-pizza{
+        text-align: center;
+    }
+    .pizza{
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .pizza img{
+        width: 200px;
+    }
+}
+

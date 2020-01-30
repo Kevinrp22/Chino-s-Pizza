@@ -35,6 +35,8 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: auto;
+    padding: 15px 0px;
     
 }
 .contenedor-logo{
@@ -61,7 +63,7 @@ a:hover {
     margin-right: 5rem;
     transition: all 300ms ease;
     border-style: none;
-    background-color: rgb(233, 233, 0);
+    background-color: #f7c338;
     border-radius: 100%;
     padding: 9px 13px;
     -webkit-transition: all 200ms ease-in-out;
@@ -385,9 +387,7 @@ font-family: 'Finger Paint', cursive; */
     .texto-pizza h4 {
         font-size: 17px;
     }
-    .texto.pizza p {
-        font-size:
-    }
+    
     .orden-pizza .orden p {
         font-size: 14px;
     }

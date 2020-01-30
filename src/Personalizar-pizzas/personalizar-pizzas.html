@@ -39,17 +39,20 @@
     <!-- COPIAR DESDE AQUI HASTA -->
     <div id="sidebar">
         <ul>
-            <li><a href="#">LOGO</a></li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Carta</a></li>
-            <li><a href="#">Personaliza tu pizza</a></li>
+            <li><a href="#"><img src="../../assets/logo.png" alt="" style="width: 265px;"></a></li>
+            <li><a href="/Inicio/inicio.html">Inicio</a></li>
+            <li><a href="/Personalizar-pizzas/personalizar-pizzas.html">Carta</a></li>
+            <li><a href="">Personaliza tu pizza</a></li>
             <li><a href="#">Menu</a></li>
         </ul>
     </div>
     <div id="contenedor-arriba">
         <div class="contenedor-logo">
             <div id="logo">
-                LOGO
+                <a href="/Inicio/inicio.html">
+                    <img src="../../assets/logo.png" alt="" style="width: 265px;">
+                </a>
+
             </div>
         </div>
 
@@ -69,7 +72,7 @@
         <div class="container">
             <nav class="menu">
                 <ul>
-                    <a href="">
+                    <a href="/Inicio/inicio.html">
                         <li>
                             <i class="fas fa-home px-1"></i>Inicio
                         </li>
@@ -81,7 +84,7 @@
                         </li>
                     </a>
 
-                    <a href="">
+                    <a href="/Personalizar-pizzas/personalizar-pizzas.html">
                         <li>
                             <i class="fas fa-pizza-slice px-1"></i>Personaliza tu pizza
                         </li>
@@ -108,16 +111,139 @@
     <!-- HASTA AQUI-->
 
     <div class="container">
-        <div class="contenido-principal">
-            <div class="texto">
-                <form action="">
-                    
-                </form>
-            </div>
-            <div class="pizza">
+        <div class="ApartadoPizza">
 
+            <div class="pizza">
+                <img src="../../assets/pizza1.png" alt="">
             </div>
+
+            <div class="orden">
+                <div class="encabezado-texto-pizza">
+                    <h1>Titulo Pizza</h1>
+                    <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
+                        tomate y barbacoa</p>
+                </div>
+                <div class="ingredientes">
+                    <form action="">
+                        <label for="" class="tituloAdicional">Tamaño</label>
+                        <div class="estilo-input">
+                            <input type="radio" name="tamaño[]" id="">
+                            <label for="">Pequeña</label>
+
+                            <input type="radio" name="tamaño[]" id="">
+                            <label for="">Mediana</label>
+                     
+                            <input type="radio" name="tamaño[]" id="">
+                            <label for="">Grande</label>
+                        </div>
+
+                        <label for="" class="tituloAdicional">Tamaño</label>
+
+                        <div class="estilo-input">
+                            <input type="radio" name="masa[]" id="">
+                            <label for="">Fina</label>
+                        
+
+                            <input type="radio" name="masa[]" id="">
+                            <label for="">Clásica</label>
+                        </div>
+
+                        <h2 style="font-family: Lato; font-weight: 600; color: rgb(173, 40, 0);">Ingredientes
+                            adicionales</h2>
+                        <p>Selecciona los ingrediente:</p>
+                        <p class="tituloAdicional">Ingredientes adicionales</p sa>
+                        <ul id="lista-ingredientes">
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Jamón</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Pollo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Peperoni</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Champiñones</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Pimiento Rojo</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Aceitunas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Huevo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Anchoas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Atún</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Bacon</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Salami</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Piña</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Pimiento Verde</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Cebolla</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Ternera</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Maiz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Frankfurt</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <label for="">Guindilla</label>
+                            </li>
+
+
+                        </ul>
+                    </form>
+                </div>
+                <div class="precio">
+
+                </div>
+            </div>
+
+
+
         </div>
+
+
     </div>
 
 
@@ -146,7 +272,7 @@
 
 
 
-    
+
 
     <!-- COPIAR FOOTER DESDE AQUI -->
     <div class="footer">
