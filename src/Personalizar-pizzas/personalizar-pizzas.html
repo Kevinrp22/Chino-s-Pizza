@@ -39,11 +39,30 @@
     <!-- COPIAR DESDE AQUI HASTA -->
     <div id="sidebar">
         <ul>
-            <li><a href="#"><img src="../../assets/logo.png" alt="" style="width: 265px;"></a></li>
-            <li><a href="/Inicio/inicio.html">Inicio</a></li>
-            <li><a href="/Personalizar-pizzas/personalizar-pizzas.html">Carta</a></li>
-            <li><a href="">Personaliza tu pizza</a></li>
-            <li><a href="#">Menu</a></li>
+            <li id="logo-sidebar"><a href="/Inicio/inicio.html" class="logo-hovernone"><img src="../../assets/logo.png"
+                        alt="" style="width: 265px;"></a></li>
+            <a href="/Inicio/inicio.html">
+                <li>
+                    <i class="fas fa-home px-1"></i>Inicio
+                </li>
+            </a>
+
+            <a href="">
+                <li>
+                    <i class="fas fa-book-open px-1"></i>Carta
+                </li>
+            </a>
+
+            <a href="/Personalizar-pizzas/personalizar-pizzas.html">
+                <li>
+                    <i class="fas fa-pizza-slice px-1"></i>Personaliza tu pizza
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <i class="fas fa-book-open px-1"></i>Menu
+                </li>
+            </a>
         </ul>
     </div>
     <div id="contenedor-arriba">
@@ -127,106 +146,116 @@
                     <form action="">
                         <label for="" class="tituloAdicional">Tamaño</label>
                         <div class="estilo-input">
-                            <input type="radio" name="tamaño[]" id="">
-                            <label for="">Pequeña</label>
+                            <div class="estilo">
+                                <input type="radio" name="tamaño[]" id="" value="7.59">
+                                <label for="">Pequeña</label>
+                            </div>
 
-                            <input type="radio" name="tamaño[]" id="">
-                            <label for="">Mediana</label>
-                     
-                            <input type="radio" name="tamaño[]" id="">
-                            <label for="">Grande</label>
+
+                            <div class="estilo">
+                                <input type="radio" name="tamaño[]" id="" value="10.69">
+                                <label for="">Mediana</label>
+                            </div>
+
+                            <div class="estilo">
+                                <input type="radio" name="tamaño[]" id="" value="15.49">
+                                <label for="">Grande</label>
+                            </div>
                         </div>
 
-                        <label for="" class="tituloAdicional">Tamaño</label>
+                        <label for="" class="tituloAdicional">Masa</label>
 
                         <div class="estilo-input">
-                            <input type="radio" name="masa[]" id="">
-                            <label for="">Fina</label>
-                        
+                            <div class="estilo">
+                                <input type="radio" name="masa[]" id="" value="Fina">
+                                <label for="">Fina</label>
+                            </div>
 
-                            <input type="radio" name="masa[]" id="">
-                            <label for="">Clásica</label>
+                            <div class="estilo">
+                                <input type="radio" name="masa[]" id="" value="Clásica">
+                                <label for="">Clásica</label>
+                            </div>
                         </div>
 
-                        <h2 style="font-family: Lato; font-weight: 600; color: rgb(173, 40, 0);">Ingredientes
-                            adicionales</h2>
+                        <h2 style="font-family: Lato; font-weight: 600; color: rgb(173, 40, 0);" class="py-2">
+                            Ingredientes</h2>
                         <p>Selecciona los ingrediente:</p>
                         <p class="tituloAdicional">Ingredientes adicionales</p sa>
                         <ul id="lista-ingredientes">
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Jamón</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Pollo</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Peperoni</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Champiñones</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Pimiento Rojo</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Aceitunas</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Huevo</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Anchoas</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Atún</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Bacon</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Salami</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Piña</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Pimiento Verde</label>
                             </li>
 
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Cebolla</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Ternera</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Maiz</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Frankfurt</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="adicional[]" id="" value="0.60">
+                                <input type="checkbox" name="ingredientes[]" id="" value="0.60">
                                 <label for="">Guindilla</label>
                             </li>
 
@@ -234,7 +263,18 @@
                         </ul>
                     </form>
                 </div>
-                <div class="precio">
+                <div class="contenedor-precio">
+                    <div class="precio">
+                        <p class="total">TOTAL:</p>
+                        <p id="salida-precio">0€</p i>
+                    </div>
+
+                    <div class="carrito">
+                        <button type="submit" class="btn-añadir-carrito" id="btn-añadir-carrito">
+                            <i class="fas fa-shopping-cart px-2"></i>Añadir
+                        </button>
+                    </div>
+
 
                 </div>
             </div>

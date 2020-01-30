@@ -88,18 +88,42 @@ a:hover {
 
 #sidebar {
     position: fixed;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.90);
     width: 300px;
     height: 100%;
     left: -300px;
     transition: all 300ms ease;
 }
+#sidebar a{
+    padding: 20px;
+}
+#sidebar a:hover{
+    background-color: #a5102e;
+}
+
+.logo-hovernone:hover{
+    background-color: transparent!important;
+}
+
+
+#logo-sidebar img{
+    padding: 25px;
+}
+
+#logo-sidebar{
+    border-bottom: none!important;
+}
 
 #sidebar ul li {
     text-align: center;
     border-bottom: 1px solid gray;
-    padding: 20px;
 }
+
+#sidebar ul{
+    display:flex;
+    flex-direction: column;
+}
+
 
 #sidebar.active {
     left: 0;
@@ -306,14 +330,96 @@ font-family: 'Finger Paint', cursive; */
 
 #lista-ingredientes {
     column-count: 2;
+    
+}
+
+#lista-ingredientes li{
+    display: flex;
+    align-items: center;
+    width: 165px;
+    padding: 5px 15px;
+    margin: 4px 0px;
+    background-color: rgba(142, 142, 142, 0.187);
+    border-radius: 20px;
+}
+#lista-ingredientes li:hover{
+    /* background-color: rgb(60, 60, 60);
+    color:white; */
+}
+#lista-ingredientes li label{
+    margin: 0 5px;
+    margin-top: 0.4px;
 }
 .estilo-input{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.estilo-input input{
+.estilo-input label{
+    margin: 0 5px;
+    margin-top: 0.4px;
+
 }
+.estilo{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    padding: 3px 20px;
+    background-color: rgba(142, 142, 142, 0.187);
+    border-radius: 20px;
+}
+
+.contenedor-precio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+   
+}
+.contenedor-precio p{
+    padding: 10px 10px;
+    margin:0;
+}
+.contenedor-precio div{
+    padding: 0px 10px;
+}
+.total{
+    padding: 0px!important;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 30px!important;
+    color: rgb(27, 27, 27);
+}
+.precio{
+    background-color: #a5102e;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.carrito{
+    padding-right: 45px!important;
+}
+
+#salida-precio{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Frijole', cursive;
+}
+
+.btn-añadir-carrito{
+   border-style: none;
+   background-color: #f7c338;
+   padding: 10px;
+   border-radius: 50px;
+   color: white;
+   --webkit-transition: all 100ms ease-in-out;
+}
+.btn-añadir-carrito:hover{
+    background-color: rgb(39, 39, 39)!important;
+}
+
 
 
 
