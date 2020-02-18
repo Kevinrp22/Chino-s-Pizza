@@ -1,20 +1,22 @@
 /* COPIAR DESDE AQUI */
 
 /* GENERAL CONTENEDOR */
-*{
+
+* {
     margin: 0;
     padding: 0;
     transition: all 0.8s!important;
 }
 
-button:focus{
-    outline:none!important;
+button:focus {
+    outline: none!important;
 }
-ul, li{
-    text-decoration: none!important;
 
+ul, li {
+    text-decoration: none!important;
     list-style: none!important;
 }
+
 a {
     text-decoration: none!important;
     color: white!important;
@@ -26,8 +28,8 @@ a:hover {
     color: white!important;
     transition: all 300ms!important;
 }
-/* FIN GENERAL CONTENEDOR */
 
+/* FIN GENERAL CONTENEDOR */
 
 #contenedor-arriba {
     height: 80px;
@@ -37,49 +39,71 @@ a:hover {
     align-items: center;
     height: auto;
     padding: 15px 0px;
-    
 }
-.contenedor-logo{
+
+.contenedor-logo {
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
-
 
 #logo {
     font-size: 40px;
     --webkit-transition: all 100ms ease-in-out!important;
-   
 }
 #logo:hover{    
     transform: translateX(10px) rotate(2deg) ;
-    cursor: pointer;
 
     /* transform: scale(1.1,1.1); */
 }
-.barra{
+
+.barra {
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     top: 2rem;
     right: 1.5rem;
     width: auto;
 }
-#boton-menu{
+
+#boton-menu {
     transition: all 300ms ease;
     border-style: none;
     background-color: #f7c338;
     border-radius: 100%;
     padding: 9px 13px;
     -webkit-transition: all 200ms ease-in-out;
+    margin-bottom: 1rem;
+}
+#boton-carrito{
+    transition: all 300ms ease;
+    border-style: none;
+    background-color: rgb(180, 8, 8)!important;
+    border-radius: 100%;
+    padding: 9px 13px;
+    -webkit-transition: all 200ms ease-in-out;
+
+}
+#boton-carrito:hover{
+    background-color: rgb(0, 0, 0)!important;
+}
+.boton-carrito{
+    background-color: rgb(180, 8, 8)!important;
+}
+.boton-carrito:hover{
+    background-color: rgb(0, 0, 0)!important;
 }
 
-#boton-menu:hover{
+.boton-nodespleg{
+    height: 100%;
+}
+#boton-menu:hover {
     background-color: black;
 }
-.fa-bars{
-    color:white!important;
+
+.fa-bars {
+    color: white!important;
     font-size: 20px!important;
 }
 
@@ -130,6 +154,7 @@ a:hover {
 }
 
 /* FIN SIDEBAR */
+
 .menu {
     border-radius: 10px;
     background-color: #ba0000;
@@ -169,12 +194,6 @@ i {
 i:hover {
     color: white!important;
 }
-i{
-    color: white;
-}
-i:hover{
-    color:white!important;
-}
 
 .header {
     background-image: url(../../assets/fondomenu.jpg);
@@ -188,7 +207,6 @@ i:hover{
 
 .fa-bars {
     font-size: 30px;
-    
 }
 
 .contenedor-texto-principal {
@@ -196,6 +214,7 @@ i:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 150px;
 }
 
 /* font-family: 'Lato', sans-serif;
@@ -225,7 +244,6 @@ font-family: 'Finger Paint', cursive; */
     border-style: none;
     background-color: #ba0000;
     height: 50px;
-    
 }
 
 .botonPrincipal:hover {
@@ -243,148 +261,72 @@ font-family: 'Finger Paint', cursive; */
     text-decoration: none;
 }
 
-/* COPIAR HASTA AQUI */
-
-/* CONTENIDO PRINCIPAL */
-
-.contenedor-contenido {
-    padding-top: 4rem;
-}
-
-.encabezado-principal h2 {
-    font-family: 'Frijole', cursive;
-    width: 100%;
-    font-size: 40px;
-    color: #ba0000;
-}
-
-.encabezado-principal p {
-    width: 100%;
-}
-
-/* contenedor-pizza */
-
-.contenedor-pizzas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-/* pizza */
-
-.pizza {
-    
-    width: 360px;
-    margin: 5px;
-    margin-bottom: 0.5rem;
-    border-radius: 15px;
-    font-family: 'Lato', sans-serif;
-    --webkit-transition: all 200ms ease-in-out;
-   
-}
-
-.pizza:hover {
-    cursor: pointer;
-    transform: scale(1.05, 1.05);
-    background-color: #8484841f;
-    
-}
-
-.imagen-pizza img {
-    width: 200px;
-    margin-top: 30px;
-}
-
-.texto-pizza h4 {
-    color: #333;
-}
-
-.texto-pizza p {
-    font-size: 14px;
-    color: #888;
-    margin: 0;
-    line-height: 15px;
-    padding: 0 5px;
-}
-
-.orden-pizza {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1.5rem;
-}
-
-
-
-.orden-pizza .orden {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2px;
-    height: auto;
-}
-
-.orden-pizza .orden p {
-    font-size: 14px;
-    width: auto;
-    height: auto;
-    margin: 0;
-    line-height: 1px;
-}
-
-.boton-añadir {
-    font-size: 12px;
-    background-color: #ba0000!important;
-    border-radius: 300px;
-    width: 100px;
-    height: auto;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-
-.boton-añadir:hover{
-    background-color: rgb(39, 39, 39)!important;
-}
-/* COPIAR FOOTER DESDE AQUI */
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: #a5102e;
     padding: 20px;
     height: 100px;
     margin-top: 3rem;
 }
-.redes-sociales{
+
+.redes-sociales {
     float: left;
 }
-.redes-sociales ul li{
+
+.redes-sociales ul li {
     display: inline-block;
     padding: 5px;
-
 }
-.redes-sociales a, i{
+
+.redes-sociales a, i {
     font-size: 15x;
     --webkit-transition: all 200ms ease-in-out;
 }
-.redes-sociales a:hover, i:hover{    
+
+.redes-sociales a:hover, i:hover {
     background-color: transparent!important;
-    color:black;
+    color: black;
     font-weight: 700;
-    
 }
 
-.texto-footer{
+.texto-footer {
     float: right;
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
 }
 
-/* COPIAR FOOTER HASTA AQUI */
+/* COPIAR HASTA AQUI */
 
 
-/* MEDIA QUERIES PARA NAVBAR */
+/* ------------------------------------------------------------------- */
+
+/* .contenedorinfo{
+    background-color: rgba(105, 105, 105, 0.236);
+    height: 500px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:781px){
     #sidebar{
@@ -394,21 +336,26 @@ font-family: 'Finger Paint', cursive; */
     
 }
 
-@media (max-width: 780px) {
-    .menu{
-        display: none!important;
+
+@media (min-width:781px){
+    .boton-carrito{
+        display: block!important;
     }
     #boton-menu{
-        display: block!important;
-       
+        display: none!important;
     }
 }
 
 
+@media (max-width: 780px) {
+    .menu {
+        display: none!important;
+    }
+    #boton-menu {
+        display: block!important;
+    }
 
-
-
-
+}
 
 @media (max-width: 1200px) {
     .pizza {
@@ -439,8 +386,47 @@ font-family: 'Finger Paint', cursive; */
     .orden-pizza .orden p {
         font-size: 14px;
     }
-
-    .texto-principal{
-        font-size: 60px;
+    .texto-principal {
+        font-size: 50px;
     }
 }
+
+
+
+
+@media (max-width: 1200px){
+    .pizza img{
+        height: 300px;
+    }
+}
+@media (max-width: 992px){
+    .pizza {
+        width: 200px;
+        height: 250px;
+    }
+    .pizza img{
+        height: 210px;
+    }
+    .orden{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .orden{
+        width: 100%;
+        padding: 0px 50px;
+    }
+    .encabezado-texto-pizza{
+        text-align: center;
+    }
+    .pizza{
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .pizza img{
+        width: 200px;
+    }
+}
+

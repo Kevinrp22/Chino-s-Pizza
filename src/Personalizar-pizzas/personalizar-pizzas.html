@@ -39,8 +39,8 @@
     <!-- COPIAR DESDE AQUI HASTA -->
     <div id="sidebar">
         <ul>
-            <li id="logo-sidebar"><a href="../Inicio/inicio.html" class="logo-hovernone"><img src="../../assets/logo.png"
-                        alt="" style="width: 265px;"></a></li>
+            <li id="logo-sidebar"><a href="../Inicio/inicio.html" class="logo-hovernone"><img
+                        src="../../assets/logo.png" alt="" style="width: 265px;"></a></li>
             <a href="../Inicio/inicio.html">
                 <li>
                     <i class="fas fa-home px-1"></i>Inicio
@@ -71,15 +71,29 @@
                 <a href="../Inicio/inicio.html">
                     <img src="../../assets/logo.png" alt="" style="width: 265px;">
                 </a>
-
             </div>
+
         </div>
+        <button id="boton-carrito" class="boton-carrito boton-nodespleg" type="button" style="display: none; ">
+            <a href="../compra/compra.php">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+        </button>
 
         <div class="barra py-1">
             <button id="boton-menu" type="button" style="display: none;">
                 <i class="fas fa-bars"></i>
             </button>
+            <button id="boton-menu" class="boton-carrito" type="button" style="display: none; ">
+                <a href="../compra/compra.php">
+                <i class="fas fa-shopping-cart"></i>
+                </a>
+            </button>
         </div>
+
+
+
 
     </div>
 
@@ -142,12 +156,20 @@
                     <p>Pechuga ahumada, costillas tiernas, salchicha ahumada, tocino y queso cheddar con lechuga,
                         tomate y barbacoa</p>
                 </div>
+
+                <div class="validacion">
+                    <p id="errorTamaño"></p>
+                    <p id="errorMasa"></p>
+                    <p id="errorIngredientes"></p>
+                </div>
+
                 <div class="ingredientes">
                     <form action="">
                         <label for="" class="tituloAdicional">Tamaño</label>
                         <div class="estilo-input">
                             <div class="estilo">
-                                <input type="radio" name="tamaño[]" id="" value="7.59">
+                                <input type="radio" name="tamaño[]" id="" value="7.59" pattern="[a-z]"
+                                    title="ANDRES MARICON">
                                 <label for="">Pequeña</label>
                             </div>
 

@@ -9,17 +9,23 @@ $(document).ready(function () {
         e.preventDefault()
         if (!$("input[name='tamaño[]'").is(":checked")) {
             /* SI NO HA ELEGIDO UN TAMAÑO ENTONCES */
-            alert("Seleciona un tamaño de pizza!");
+            /* $(".validacion").css("display","block")
+            $("#errorTamaño").text("Selecciona un tipo de pizza") */
+            alert("Selecciona un tamaño de pizza");
             return false;
         }
         if (!$("input[name='masa[]'").is(":checked")) {
             /* SI NO HA ELEGIDO UN TIPO DE MASA ENTONCES */
-            alert("Seleciona un tipo de masa!");
+           /*  $(".validacion").css("display","block")
+            $("#errorMasa").css("display","block") */
+            alert("Selecciona un tipo de masa");
             return false;
         }
         if (!$("input[name='ingredientes[]'").is(":checked")) {
             /* SI NO HA ELEGIDO UN INGREDIENTE ENTONCES */
-            alert("Seleciona al menos 1 ingrediente!");
+           /*  $(".validacion").css("display","block")
+            $("#errorIngredientes").css("display","block") */
+            alert("Selecciona al menos un ingrediente");
             return false;
         }
         function RecorrerInputs() {
